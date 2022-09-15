@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Grid</title>
+  </head>
+  <body>
+    <div class="options">
+    
+      <div class="size">
+        <div class="size__inputs">
+          <label for="rows">Rows</label>
+          <input type="number" id="rows" value="8" />
+          <label for="columns">Columns</label>
+          <input type="number" id="columns" value="8" />
+        </div>
+
+        <div class="size__ratio-checkbox">
+          <input type="checkbox" id="lockRatio" checked />
+          <label for="lockRatio">Lock Aspect Ratio</label>
+        </div>
+
+        <div class="size__action">
+          <button class="btn btn--primary" id="setGridSize">Set Size</button>
+        </div>
+      </div>
+      
+      
+      <div class="colour">
+      
+        <div class="pixel-colour">
+      	  <label for="pixelColour">Pixel Colour</label>
+      	  <input type="color" id="pixelColour" />
+      	  <button class="btn btn--outlined" id="setPixelColour">Set Pixel Colour</button>
+      	</div>
+      	
+        <div class="background-colour">
+      	  <label for="bgColour">Background Colour</label>
+      	  <input type="color" id="bgColour" />
+      	  <button class="btn btn--outlined" id="setBgColour">Set BG Colour</button>
+      	</div>
+      	
+      </div>
+      
+      <div class="clear">
+      	<button class="btn btn--outlined" id="clearGrid">Clear</button>
+      </div>
+      
+    </div>
+    <drawing-container></drawing-container>
+    <script src="./script.js"></script>
+  </body>
+</html>
